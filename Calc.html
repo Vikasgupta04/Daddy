@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add_numbers()
+        {
+            let fnum = parseInt(document.getElementById("f").value);
+            let snum = parseInt(document.getElementById("s").value);
+            //alert(fnum + " " + snum);
+            documnent.getElementById("display_content").innerHTML = ("Addition of Two numbers: " + (fnum+snum));
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <label for="f">Enter First number:</label>
+            <input type="number" name="f" id="first_num">
+        </tr>
+        
+        <tr>
+            <td><label for="s">Enter Second number:</label></td>
+            <td><input type="number" name="s" id="second_num"></td>
+        </tr>
+        <tr>
+            <tr>
+                <td>
+                    <input type="button" name="add_btn" id="add_btn" value="Add Numbers" onclick="add_numbers();">
+                </td>
+            </tr>
+        </tr>
+    </table>
+    <p id="display_content "></p>
+</body>
+</html>
